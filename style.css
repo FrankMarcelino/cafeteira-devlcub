@@ -41,7 +41,7 @@ section {
   top: 0;
 }
 
-.mascara {
+.caixa-video .mascara-video {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -113,7 +113,7 @@ header section ul li a:hover {
   line-height: 1.5;
 }
 
-.hero a {
+.btn-link {
   display: inline-block;
   background-color: var(--main-color);
   cursor: pointer;
@@ -121,9 +121,83 @@ header section ul li a:hover {
   font-size: 1rem;
   color: #fff;
   padding: 0.5rem 1.5rem;
+  border: none;
+  transition: 0.3s linear;
 }
 
 .hero a:hover {
   background-color: #fff;
   color: var(--main-color);
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sobre-img {
+  flex: 1 1 28.1rem;
+}
+
+.sobre-img img {
+  width: 100%;
+}
+
+.sobre-text {
+  flex: 1 1 28.1rem;
+  padding: 1.25rem;
+}
+
+.sobre-text h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.sobre-text p {
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 2.1rem;
+  font-size: 2.5rem;
+}
+
+.title span {
+  color: var(--main-color);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 20px;
+  z-index: 4;
+  position: fixed;
+  top: 50%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: left 0.5s ease-in-out;
+}
+
+.mascara-mapa {
+  transition: visibility 0.3s linear;
+  z-index: 3;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 10%, rgba(10, 12, 16, 0.3) 50%, rgba(10, 12, 16, 0.99) 90%);
+  visibility: hidden;
 }

@@ -10,7 +10,7 @@
   <body>
     <div class="caixa-video">
       <video src="video/coffe.mp4" loop muted autoplay></video>
-      <div class="mascara"></div>
+      <div class="mascara-video"></div>
     </div>
 
     <header>
@@ -23,7 +23,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Avaliações</a></li>
-            <li><a href="#">Endereço</a></li>
+            <li><a href="#" onclick="mostrarModal()">Endereço</a></li>
           </ul>
         </nav>
       </section>
@@ -38,34 +38,51 @@
           expedita illo beatae voluptatibus iure optio distinctio itaque eos
           dicta delectus
         </p>
-        <a href="#">Pague o seu cafe</a>
+        <a href="#" class="btn-link">Pague o seu café</a>
       </div>
     </section>
 
-    <section>
-      <h2><span>Sobre</span> Nós</h2>
-      <div>
-        <div><img src="img/about-img.jpeg" alt="" /></div>
-      </div>
+    <section class="sobre">
+      <h2 class="title"><span>Sobre</span> Nós</h2>
 
-      <div>
-        <h3>O que faz nosso café especial</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          libero aspernatur quae esse numquam quaerat minus, deleniti quibusdam
-          veritatis suscipit architecto amet tempora praesentium optio
-          repudiandae voluptatum in? Quod, debitis.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vel
-          porro amet quod magni laborum architecto officia, repellat deleniti
-          aliquid. Facilis nisi quod a sapiente dicta sed aliquam, optio
-          similique?
-        </p>
-        <a href="#">Saiba Mais</a>
+      <div class="sobre-container">
+        <div class="sobre-img">
+          <img src="img/about-img.jpeg" alt="" />
+        </div>
+
+        <div class="sobre-text">
+          <h3>O que faz nosso café especial</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            libero aspernatur quae esse numquam quaerat minus, deleniti
+            quibusdam veritatis suscipit architecto amet tempora praesentium
+            optio repudiandae voluptatum in? Quod, debitis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vel
+            porro amet quod magni laborum architecto officia, repellat deleniti
+            aliquid. Facilis nisi quod a sapiente dicta sed aliquam, optio
+            similique?
+          </p>
+          <a href="#" class="btn-link">Saiba Mais</a>
+        </div>
       </div>
     </section>
 
+    <div class="modal">
+      <h3 class="title"><span>Nosso</span> Endereço</h3>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.9475330101495!2d-39.33046578892934!3d-7.2468118711545815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a182728729c78d%3A0x4cdc9a3bdfa60a88!2sAna%20Paula%20%7C%20Beauty%20Studio!5e0!3m2!1spt-BR!2sbr!4v1734457297279!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="mascara-mapa" onclick="esconderModal()"></div>
     <script src="script.js"></script>
   </body>
 </html>
