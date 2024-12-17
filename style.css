@@ -1,12 +1,27 @@
 /* reset */
+:root {
+  font-size: 16px;
+  --main-color: #d3ad7f;
+  --black: #131313;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 /* Estilos gerais */
@@ -32,4 +47,83 @@ body {
   position: fixed;
   top: 0;
   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: var(--bg);
+  border-bottom: var(--border);
+}
+
+header section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+section ul {
+  display: flex;
+}
+
+header section a img {
+  height: 6rem;
+}
+
+header section ul li a {
+  margin: 0 1rem;
+  font-size: 1.125rem;
+  color: #fff;
+  transition: 0.3s linear;
+}
+
+header section ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero div {
+  max-width: 37.5rem;
+}
+
+.hero h3 {
+  font-size: 3.75rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 100;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: var(--main-color);
+  cursor: pointer;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.hero a:hover {
+  background-color: #fff;
+  color: var(--main-color);
 }
